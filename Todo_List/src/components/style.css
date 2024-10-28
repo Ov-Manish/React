@@ -15,6 +15,7 @@ body {
 .container {
   background: #fcfff3;
   padding: 50px;
+  border-radius: 10px;
 }
 
 input {
@@ -28,13 +29,17 @@ input {
 
 button {
   border-radius: 100px;
-  background: #454545;
+  background: #000000;
   padding: 5px;
   outline: none;
   border: none;
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+button:hover{
+  background: #454545;
 }
 
 .todos-list {
