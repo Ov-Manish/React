@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, #fcecff 0%, #b261ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #f3fffe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  height: 30rem;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(255, 255, 223);
+}
+
+.card-image {
+  /* background: url("../public/rohit-tandon-9wg5jCEPBsw-unsplash.jpg"); */
+  
+  height: 100%;
+  background: url("https://myspace.windows93.net/u/6845/avatar.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 10px;
+  margin: 5px;
+  width: 20rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.error {
+  font-family: sans-serif;
+  color:#b261ff;
+}
+
+.submit-btn {
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  background:#b261ff;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
