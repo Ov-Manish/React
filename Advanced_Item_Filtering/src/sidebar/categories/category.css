@@ -1,0 +1,61 @@
+input[type="radio"] {
+    outline: none; /* Removes the outline on focus */
+    box-shadow: none; /* Removes any box-shadow that might be causing the rectangle */
+    border: none; /* Removes the border */
+}
+.sidebar-title{
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.sidebar-label-conatainer{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select:none    ;
+    -moz-user-select: none;
+    mas-user-select: none;
+    user-select: none;
+}
+.sidebar-label-conatainer input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.sidebar-label-conatainer:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+.sidebar-label-conatainer input:checked ~ .checkmark{
+    background-color: #30a2ff;
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.sidebar-label-conatainer input:checked ~ .checkmark::after{
+    display: block;
+}
+.sidebar-label-conatainer .checkmark::after{
+    top: 6.4px;
+    left: 6.4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+.line{
+    margin-top: 3rem;
+    border: #f7f7f7;
+}
